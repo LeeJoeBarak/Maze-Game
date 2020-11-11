@@ -23,10 +23,7 @@ public class MyCompressorOutputStream  extends OutputStream{
     //private StringBuilder sbCompressedData;
 
     public MyCompressorOutputStream(OutputStream fileOS) {
-        /* note that if they use the same compressor instance for all tests then they're also using same reference to file */
-        //channel = ((FileOutputStream)fileOS).getChannel();
-        this.outStream = fileOS;
-        //this.sbCompressedData = new StringBuilder();
+             this.outStream = fileOS;
     }//ctor
 
     public void write(byte[] bytearray) throws IOException {
