@@ -18,7 +18,7 @@ public class BestFirstSearch extends ASearchingAlgorithm {
     @Override
     public Solution solve(ISearchable searchable) {
         searchable.resetBoolArray();
-        PriorityQueue<AState> queueOfState = new PriorityQueue<>(10000,(s1, s2)->s1.getCost()-s2.getCost());/* ctrl + Q for java doc */
+        PriorityQueue<AState> queueOfState = new PriorityQueue<>(10000,(s1, s2)->s1.getCost()-s2.getCost());
         ArrayList<AState> solution = new ArrayList<>();
         Position startPosition = searchable.getStartPosition();
         Position goalPosition = searchable.getGoalPosition();
